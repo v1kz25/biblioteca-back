@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${POSTGRES_DB:biblioteca}
+    username: ${POSTGRES_USER:biblioteca}
+    password: ${POSTGRES_PASSWORD:biblioteca}
+  docker:
+    compose:
+      lifecycle-management: start-only
